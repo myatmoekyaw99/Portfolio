@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
 }
 
 header{
@@ -261,16 +269,14 @@ li{
     width: 100%;
     min-height: 500px;
     position: relative;
-    padding: 80px 0;
-
+    padding: 30px 0;
 }
 
 .about-me{
     position: relative;
     width: 80%;
     height: 350px;
-    margin: 0 auto;
-    /* margin-top: 80px; */
+    margin: 50px auto;
 }
 
 .about-header{
@@ -312,8 +318,8 @@ li{
 
 .lines{
     width: 70%;
-    margin: 50px auto;
-    /* height: 0.5rem; */
+    margin: 10px auto;
+    height: 0.5rem;
     position: relative;
 }
 
@@ -357,16 +363,14 @@ li{
     height: 0.8rem;
 }
 
-@media  screen and (max-width:1230px) {
-    .about-me{
-        width: 100%;
-    }
-}
-
 @media  screen and (max-width:1025px) {
    body{
     font-size: 14px;
    }
+
+   .about-me{
+    width: 100%;
+}
 
    .about-header{
     font-size: 3rem;
@@ -420,7 +424,7 @@ li{
     }
 
     .lines{
-        margin: 28px auto;
+        margin-top: 28px;
         height: 1px;
     }
 
@@ -433,3 +437,105 @@ li{
         top: -3px;
     }
  }
+
+ /************************ABOUT ME SECTION END******************************/
+
+
+ /************************SKILLS SET SECTION START******************************/
+
+ .skill-section{
+    width: 80%;
+    margin: 70px auto;
+    min-height: 400px;
+    background-color: ;
+ }
+
+ .skill-header{
+    text-align: center;
+    color: gray;
+ }
+
+ .skill-type{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .skill-img{
+    width: 60px;
+    height: 60px;
+ }
+
+.skill-type-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-text{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.skill-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-bar{
+    width: 85%;
+    /* margin: 0 auto; */
+    display: flex;
+    /* grid-template-columns: 30% 70%; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-bar .info{
+    width: 25%;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 15px;
+}
+
+.skill-bar .bar{
+    width: 75%;
+    height: 15px;
+    background-color: #003049;
+    border-radius: 25px;
+    position: relative;
+}
+
+.html,.css,.js,.jquery{
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.html{
+    width: 70%;
+}
+
+.css{
+    width: 80%;
+}
+
+.js{
+    width: 60%;
+}
+
+

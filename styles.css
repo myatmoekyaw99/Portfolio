@@ -15,6 +15,7 @@ body{
 header{
     position: relative;
 }
+
 /* *************NAVBAR SECTION*****************/
 .nav-bar{
     position: fixed;
@@ -23,11 +24,11 @@ header{
     height: 80px;
     /* max-width: 1200px; */
     margin:0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
     display:flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .nav-brand{
@@ -108,7 +109,7 @@ li{
 
 .toggle_btn{
     margin: 0 auto;
-    color: white;
+    color: #0aaa42;
     font-weight: bold;
     cursor: pointer;
     display: none;
@@ -264,14 +265,53 @@ li{
 
 /*******************END BANNER SECTION*********************/
 
-/*******************ABOUT ME SECTION*********************/
+
 .main-content{
     width: 100%;
     min-height: 500px;
     position: relative;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
 }
 
+/***********************SIDE TEXT***************************/
+.side-text{
+    position: absolute;
+    width:100px ;
+    height: 80%;
+    top: 10%;
+    right: 5px;
+}
+
+.side-text-word{
+    width: auto;
+    writing-mode: vertical-rl;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    /* word-spacing: 1rem; */
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(#8ecae6,#e5e5e5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+@media  screen and (max-width:430px) {
+    .side-text{
+        width: 60px;
+        height: 60%;
+        top: 18%;
+    }
+
+    .side-text-word{
+        font-size: 3rem;
+    }
+}
+
+/*******************************END SIDE TEXT*****************/
+
+
+/*******************ABOUT ME SECTION*********************/
 .about-me{
     position: relative;
     width: 80%;
@@ -447,20 +487,11 @@ li{
     width: 80%;
     margin: 70px auto;
     min-height: 400px;
-    background-color: ;
  }
 
  .skill-header{
     text-align: center;
     color: gray;
- }
-
- .skill-type{
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
  }
 
  .skill-img{
@@ -469,6 +500,7 @@ li{
  }
 
 .skill-type-data{
+    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -482,24 +514,22 @@ li{
 
 .skill-content{
     width: 100%;
+    margin: 30px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 }
 
 .skill-col{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: flex-start; */
 }
 
 .skill-bar{
     width: 85%;
-    /* margin: 0 auto; */
     display: flex;
-    /* grid-template-columns: 30% 70%; */
     align-items: center;
     justify-content: space-between;
 }
@@ -519,7 +549,7 @@ li{
     position: relative;
 }
 
-.html,.css,.js,.jquery{
+.html,.css,.js,.react,.jq,.php,.laravel,.mysql,.mongodb{
     height: 100%;
     position: absolute;
     background-color: blue;
@@ -527,15 +557,192 @@ li{
 }
 
 .html{
-    width: 70%;
+    width: 75%;
+    animation: html 1s ease-in-out;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
 }
 
+/* .css{
+    width: 50%;
+} */
+
 .css{
-    width: 80%;
+    width: 85%;
+    animation: css 2s ease-in-out;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
 }
 
 .js{
     width: 60%;
 }
 
+.jq{
+    width: 70%;
+}
 
+.react{
+    width: 80%;
+}
+
+.php{
+    width: 85%;
+}
+
+.laravel{
+    width: 80%;
+}
+
+.mysql{
+    width: 70%;
+}
+
+.mongodb{
+    width: 60%;
+}
+
+@media screen and (max-width:770px) {
+    .skill-section{
+        height: auto;
+    }
+
+    .skill-bar{
+        width: 90%;
+    }
+    
+    .skill-bar .info{
+        width: 35%;
+        font-size:smaller;
+    }
+
+    .skill-bar .bar{
+        width: 65%;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skill-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*******************************END SKILLS SET SECTION********************************/
+
+
+/*******************************EXPERIENCE SECTION START********************************/
+.experiences{
+    width: 100%;
+    height: 550px;
+    background-color: #e5e5e5;
+    margin-top: 50px;
+    position: relative;
+}
+
+.exp-header{
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.exp-header-text{
+    padding-top: 50px;
+}
+
+/* .exp-carousel{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+} */
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: #e5e5e5;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+/* .slide-content{
+    margin: 0 40px;
+} */
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 0 10px;
+    /* width: 320px; */
+    border-radius: 25px;
+    background-color: #e5e5e5;
+}
+
+.card-content{
+display: flex;
+flex-direction: column;
+align-items: start;
+padding: 10px 14px;
+}
+
+.card-image{
+    position: relative;
+    height: 280px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+h6{
+    color: #00b8e0;
+}
+
+.company{
+    color: #2a9d8f;
+}
+
+
+@media  screen and (max-width:550px) {
+    .card-wrapper{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .experiences{
+        height: auto;
+    }
+}
+/************************End Experience SEction****************************/
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,71 @@
+
+    /***********************/
+    
+    <div class="slide-container swiper">
+        <i id="left" class="fa-solid fa-angle-left arrow"></i>
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="Images/exp1.jpg" class="card-img" alt="experience-1">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="time-interval">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>2018-2019</span>
+                        </div>
+    
+                        <h6>INTERN WEB DEVELOPER</h6>
+                        <span class="company">Demo Company Limited</span>
+                    </div>
+    
+                </div>
+    
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="Images/exp2.jpg" class="card-img" alt="experience-1">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="time-interval">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>2021-2023</span>
+                        </div>
+    
+                        <h6>Junior WEB DEVELOPER</h6>
+                        <span class="company">Best&Bright Company Limited</span>
+                    </div>
+    
+                </div>
+    
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="Images/exp3.jpg" class="card-img" alt="experience-1">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="time-interval">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>2023-current</span>
+                        </div>
+    
+                        <h6>Junior WEB DEVELOPER</h6>
+                        <span class="company">Best&Bright Company Limited</span>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- </div> -->

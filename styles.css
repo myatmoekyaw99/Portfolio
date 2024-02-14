@@ -670,39 +670,42 @@ li{
 .slide-container{
     max-width: 1120px;
     width: 100%;
+    height: 300px;
     background-color: #e5e5e5;
     margin: 0 auto;
     padding: 10px 0;
+    position: relative;
 }
 /* .slide-content{
     margin: 0 40px;
 } */
 
-.card-wrapper{
+/* .card-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.card{
+.slide-card{
     margin: 0 10px;
-    /* width: 320px; */
+    /* width: 320px;*/
     border-radius: 25px;
-    background-color: #e5e5e5;
+    background-color: #fff;
 }
 
 .card-content{
+/* font-size: 0.9rem; */
 display: flex;
 flex-direction: column;
 align-items: start;
-padding: 10px 14px;
+padding: 14px;
 }
 
 .card-image{
     position: relative;
-    height: 280px;
+    height: 250px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -716,23 +719,36 @@ padding: 10px 14px;
     border-top-right-radius: 25px;
 }
 
+.time-interval{
+    font-size: 0.7rem;
+}
+
 h6{
+    font-size: 0.8rem;
     color: #00b8e0;
 }
 
 .company{
+    font-size: 1rem;
     color: #2a9d8f;
+}
+
+.owl-nav{
+    font-size: 20px;
+}
+
+.owl-prev,.owl-next{
+    width: 20px;
 }
 
 
 @media  screen and (max-width:550px) {
-    .card-wrapper{
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .experiences{
+        min-height: 500px;
     }
 
-    .experiences{
-        height: auto;
+    .exp-header-text{
+        font-size: medium;
     }
 }
 /************************End Experience SEction****************************/
@@ -745,6 +761,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media  screen and (max-width:550px) {
+    footer{
+        font-size:xx-small;
+    }
 }
 
 /*###########################End home page#########################################*/

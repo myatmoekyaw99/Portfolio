@@ -31,39 +31,22 @@ toggleBtn.onclick = function(){
 
 // automaticSlide();
 
-/********************Swiper js***********************/
-var swiper = new Swiper(".slide-container", {
-    direction:'vertical',
-    slidesPerView: 3,
-    spaceBetween: 30,
-    // sliderPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    // centerSlide: "true",
-    // fade: "true",
-    // grabCursor: "true",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    //   dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  
-    // breakpoints: {
-    //   0: {
-    //     slidesPerView: 1,
-    //   },
-    //   520: {
-    //     slidesPerView: 2,
-    //   },
-    //   768: {
-    //     slidesPerView: 3,
-    //   },
-    //   1000: {
-    //     slidesPerView: 4,
-    //   },
-    // },
-  });
+/********************Owl slider***********************/
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  autoplayTimeout:3000,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:3
+      }
+  }
+})

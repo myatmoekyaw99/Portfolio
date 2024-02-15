@@ -1129,6 +1129,8 @@ footer{
     border-radius: 50%;
 }
 
+
+/********SKILL SECTION 2************/
 .skills-section-2{
     width: 100%;
     height: 400px;
@@ -1145,8 +1147,8 @@ footer{
 }
 
 .card-header{
+    color: #003049;
     text-align: center;
-    color: #00b8e0;
     font-size: 1.1rem;
     height: 20%;
 }
@@ -1157,7 +1159,7 @@ footer{
     font-size: 1rem;
     overflow: scroll;
     scrollbar-width: none;
-    /* text-align: justify; */
+    background-color: honeydew;
 }
 .card-foot{
     width: 100%;
@@ -1185,4 +1187,21 @@ footer{
         align-items: center;
         justify-content: center;
     }
+}
+
+/**************SKILL SECTION3*************/
+
+.skills-section-3{
+    width: 100%;
+    height: 300px;
+    background-color: honeydew;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.skill-accordion{
+    margin-top: 30px;
+    
 }

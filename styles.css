@@ -29,7 +29,7 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -119,7 +119,7 @@ li{
 
 .dropdown_menu{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 80px;
     right:2rem;
     width: 150px;
@@ -129,7 +129,7 @@ li{
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown_menu li {
@@ -406,9 +406,9 @@ li{
 }
 
 @media  screen and (max-width:1025px) {
-   body{
+   /* body{
     font-size: 14px;
-   }
+   } */
 
    .about-me{
     width: 100%;
@@ -787,7 +787,7 @@ footer{
 .person-card{
     width: 90%;
     height: 90%;
-    background-color: #eff7f6;
+    background-color: #ffffff;
     border-radius: 50px;
     box-shadow: 5px 8px rgba(0, 0, 0, 0.3);
     display: grid;
@@ -804,7 +804,7 @@ footer{
 
 .card-left h2{
     position: absolute;
-    top: -80%;
+    top: -70%;
     right: 0;
     font-weight: bold;
     color: #6b9080;
@@ -957,13 +957,232 @@ footer{
 /*******************PROFILE PAGE EXPERIENCES****************/
 .profile-experiences{
     width: 100%;
-    height: 500px;
+    min-height: 550px;
     position: relative;
+    padding-top: 40px;
 }
 
-.profile-experiences h3{
-    margin-top: 50px;
-    color: #2a9d8f;
+/* .profile-experiences:hover{
+    background-color: #003049;
+} */
+
+.profile-experiences h2{
+    width: 250px;
+    /* margin-top: 40px; */
+    margin-left: 10px;
+    /* color: #2a9d8f; */
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(to right,#2d6a4f,#5390d9,#2d6a4f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.exp-card-container{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 500px;
+    /* background-color: #6b9080; */
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-card{
+    width: 50%;
+    height: 200px;
+    border: 5px solid #fff;
+    outline: 2px solid #6b9080;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #6b9080;
+}
+
+.exp-card-1{
+    margin-left: 2%;
+}
+
+.exp-card-2{
+    margin-left: 25%;
+}
+
+.exp-card-3{
+    margin-left: 48%;
+}
+
+.exp-card-header{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: #2d6a4f;
+    color: white;
+    border-bottom: 1px solid white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.exp-card-body{
+    height: 100%;
+    padding: 5px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.exp-card-text{
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (max-width:430px) {
+    .exp-card-body{
+        padding-bottom: 10px;
+    }
+    .exp-card-text{
+        text-align: unset;
+    }
+}
+
+/**********************END PROFILE PAGE EXPERIENCES SECTION************************/
+
+/**********************START PROFILE PAGE ENGAGEMENT SECTION************************/
+.engagement-section{
+    width: 100%;
+    height: 200px;
+    background-color: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.engagement-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.btn-engage{
+    background-color: #6b9080;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-engage:hover{
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.modal-title{
+    color: #0aaa42;
+}
+
+.modal-body{
+    background-color: #6b9080;
+    color: white;
+}
+
+@media screen and (max-width:430px) {
+    .btn-engage{
+        font-size: small;
+    }
+}
+
+/*****########################END OF PROFILE PAGE ENGAGEMENT SECTION###################################*/
+
+
+/********************START SKILLS PAGE**************************************/
+/********************START OF SKILLS PAGE SECTION**************************************/
+.skills-section-1{
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+    background-color: honeydew;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.html-skill,.css-skill,.javascript-skill{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    color: gray;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.skill-group{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.html-img,.css-img,.javascript-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.skills-section-2{
+    width: 100%;
+    height: 400px;
+    background-color: #dfe7fd;
+    display: flex;
+    gap: 10px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 300px;
+}
+
+.card-header{
+    text-align: center;
+    color: #00b8e0;
+    font-size: 1.1rem;
+    height: 20%;
+}
+.card-body{
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    font-size: 1rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* text-align: justify; */
+}
+.card-foot{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tech-name{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+    background-color: #00b8e0;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:545px) {
+    .skills-section-2{
+        padding-top: 20px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
 }

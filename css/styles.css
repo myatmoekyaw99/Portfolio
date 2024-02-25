@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+/*****Other file import*******/
+
+/* *************NAVBAR SECTION*****************/
+@import url("section/navbar.css");
+/********************END NAVBAR SECTION************************/
+
+/*************************BANNER SECTION***************************/
+@import url("section/banner.css");
+/*******************END BANNER SECTION*********************/
+
+/*******************ABOUT ME SECTION*********************/
+@import url("section/about.css");
+/************************ABOUT ME SECTION END******************************/
+
+/************************SKILLS SET SECTION START******************************/
+@import url("section/skill-set.css");
+/*******************************END SKILLS SET SECTION********************************/
+
+/*******************************EXPERIENCE SECTION START********************************/
+@import url("section/experiences.css");
+/************************End Experience SEction****************************/
+
+/**************************Start Profile Page**************************/
+@import url("section/profilepage.css");
+/*********************END OF PROFILE PAGE ENGAGEMENT SECTION***********/
+
+/********************START SKILLS PAGE**************************************/
+@import url("section/skill-page.css");
+/********************END SKILLS PAGE******************************/
+/**********************/
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.main-content{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 30px 0 0 0;
+}
+
+/***********************SIDE TEXT***************************/
+.side-text{
+    position: absolute;
+    width:100px ;
+    height: 80%;
+    top: 10%;
+    right: 5px;
+}
+
+.side-text-word{
+    width: auto;
+    writing-mode: vertical-rl;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    /* word-spacing: 1rem; */
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(#8ecae6,#e5e5e5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+@media  screen and (max-width:430px) {
+    .side-text{
+        width: 60px;
+        height: 60%;
+        top: 18%;
+    }
+
+    .side-text-word{
+        font-size: 3rem;
+    }
+}
+
+/*******************************END SIDE TEXT*****************/
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media  screen and (max-width:550px) {
+    footer{
+        font-size:xx-small;
+    }
+}
+
+/*###########################End home page#########################################*/

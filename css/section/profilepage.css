@@ -1,0 +1,312 @@
+.person-detail{
+    margin-top: 50px;
+    width: 100%;
+    /* max-height:1300px ; */
+    height: 700px;
+    background-color: #6b9080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-card{
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.card-left{
+    position: relative;
+    background-color: #6b9080;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.card-left h2{
+    position: absolute;
+    top: -70%;
+    right: 0;
+    font-weight: bold;
+    color: #6b9080;
+}
+
+.circle-2{
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6b9080;
+}
+
+.circle-1{
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6b9080;
+}
+
+.circle-1:hover,.circle-2:hover{
+    background-color: white;
+    border: 2px solid #6b9080;
+    cursor: pointer;
+}
+
+.circle-3{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    top: -40px;
+    left: 40%;
+    background-color: #6b9080;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle-3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.profile-picture{
+    margin: 20px;
+    width: 80%;
+    height: 190px;
+    border-radius: 10%;
+    border: 2px solid #fff;
+    opacity: 0.8;
+    transition: transform 1s ease-in-out;
+}
+
+.profile-picture:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scaleX(1.1);
+}
+
+.card-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    border-left:3px dotted #6b9080;
+}
+
+.card-right p{
+    text-align: justify;
+    font-size: 0.9rem;
+    width: 90%;
+    color: #6b9080;
+}
+
+.distinct-name{
+    padding: 0 5px;
+    background-color: #6b9080;
+    color: white;
+    border-radius: 10px;
+}
+
+@media  screen and (max-width:1050px) {
+    .person-detail{
+        height: 1000px;
+    }
+} 
+
+@media  screen and (max-width:750px) {
+    .person-card{
+       display: flex;
+       flex-direction: column;
+       align-items: start;
+       justify-content: space-around;
+        box-shadow: none;
+    }
+
+    .circle-1,.circle-2,.card-left h2{
+        display: none;
+    }
+
+    .card-left{
+        width: 100%;
+    }
+    .profile-picture{
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 80%;
+        border-radius: 10%;
+        opacity: 1;
+        transition: none;
+        transform: none;
+    }
+
+    .circle-3{
+        top: -50px;
+    }
+
+    .card-right{
+        border: none;
+        margin:0 1px;
+    }
+
+    .card-right p{
+        font-size: 0.8rem;
+        width: 95%;
+    }
+
+} 
+
+@media screen and (max-width:430px) {
+    .person-card{
+        width: 98%;
+    }
+    .card-right p{
+        
+        font-size: 0.7rem;
+        width: 100%;
+    }
+}
+
+
+/*******************PROFILE PAGE EXPERIENCES****************/
+.profile-experiences{
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+    padding-top: 40px;
+}
+
+/* .profile-experiences:hover{
+    background-color: #003049;
+} */
+
+.profile-experiences h2{
+    width: 250px;
+    /* margin-top: 40px; */
+    margin-left: 10px;
+    /* color: #2a9d8f; */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(to right,#2d6a4f,#5390d9,#2d6a4f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.exp-card-container{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 500px;
+    /* background-color: #6b9080; */
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-card{
+    width: 50%;
+    height: 200px;
+    border: 5px solid #fff;
+    outline: 2px solid #6b9080;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #6b9080;
+}
+
+.exp-card-1{
+    margin-left: 2%;
+}
+
+.exp-card-2{
+    margin-left: 25%;
+}
+
+.exp-card-3{
+    margin-left: 48%;
+}
+
+.exp-card-header{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: #2d6a4f;
+    color: white;
+    border-bottom: 1px solid white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.exp-card-body{
+    height: 100%;
+    padding: 5px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.exp-card-text{
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (max-width:430px) {
+    .exp-card-body{
+        padding-bottom: 10px;
+    }
+    .exp-card-text{
+        text-align: unset;
+    }
+}
+
+/**********************END PROFILE PAGE EXPERIENCES SECTION************************/
+
+/**********************START PROFILE PAGE ENGAGEMENT SECTION************************/
+.engagement-section{
+    width: 100%;
+    height: 200px;
+    background-color: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.engagement-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.btn-engage{
+    background-color: #6b9080;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-engage:hover{
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.modal-title{
+    color: #0aaa42;
+}
+
+.modal-body{
+    background-color: #6b9080;
+    color: white;
+}
+
+@media screen and (max-width:430px) {
+    .btn-engage{
+        font-size: small;
+    }
+}
